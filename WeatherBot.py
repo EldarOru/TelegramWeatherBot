@@ -1,8 +1,8 @@
 import telebot;
 import pyowm
 city = ''
-owm = pyowm.OWM('6d00d1d4e704068d70191bad2673e0cc')
-bot = telebot.TeleBot('893546643:AAEwXISKRl_NX6EeGJr2YKs3m2Us6g0BndM');
+owm = pyowm.OWM('')
+bot = telebot.TeleBot('');
 @bot.message_handler(commands=['start'])
 def get_text_messages(message):
     bot.send_message(message.from_user.id, "Введите город, в котором хотите узнать погоду")
